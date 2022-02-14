@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--pale-blue);
+    font-family:'Red Hat Display', sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    background-color: var(--very-pale-blue);
+    margin: 4rem auto;
+    border-radius: 1rem;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.main .title {
+    color: var(--dark-blue);
+    margin: 2rem auto;
+}
+
+.main .description {
+    color: var(--desaturated-blue);
+    padding: 0 1.5rem;
+    margin: 2rem auto;
+}
+
+.plan-container {
+    background-color: rgba(220, 220, 220, 0.2);
+    display: flex;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    margin: 0 1rem 1rem;
+}
+
+.plan-description {
+    margin-left: 1rem;
+}
+
+.plan-image{
+    width: 3rem;
+    height: 3rem;
+}
+
+.plan-title {
+    color: var(--dark-blue);
+    font-size: 1rem;
+    margin: 0 0.5rem;
+}
+
+.plan-price {
+    color: var(--desaturated-blue);
+    padding-top: 0.4rem;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+}
+
+.btn-change {
+    color: var(--bright-blue);
+    font-family:'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    text-decoration: underline;
+    background-color: transparent;
+    padding-left: 1rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-primary {
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--bright-blue);
+    color: var(--pale-blue);
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 0.6rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover,
+.tn-secondary:hover {
+    opacity: 0.8;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 1rem 1rem hsla(224, 23%, 55%, 0.4);
+}
+
+.btn-secondary {
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--desaturated-blue);
+    padding: 1rem;
+    margin: 0.5rem 1rem;
+    background-color: transparent;
+}
+.list-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.list-item a {
+    text-decoration: none;
+    color: var(--bright-blue);
+    cursor: pointer;
+}
+
+.footer {
+    margin-bottom: 0.5rem;
+}
+
+
+
+@media screen and (min-width: 375px) {
+    .container {
+        width: 375px;
+    }
+
+    .btn-change {
+        margin: 0 auto;
+        padding-left: 4rem;
+    }
+}
